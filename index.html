@@ -2,293 +2,2494 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Bidipta Chatterjee - Full Stack Web Developer | MERN Stack | AI Integration">
+
+    <meta name="author"
+        content="Bidipta Chatterjee">
+
+    <title>
+        Bidipta Chatterjee | Full Stack Web Developer
+    </title>
+
+
+    <!-- =====================================================
+                         CSS
+    ====================================================== -->
+
+    <link rel="stylesheet"
+        href="style.css">
+
+
+    <!-- =====================================================
+                         FONT AWESOME
+    ====================================================== -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- =====================================================
+                         GOOGLE FONT
+    ====================================================== -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
 </head>
 
+
 <body>
-    <div id="header">
+
+
+    <!-- =====================================================
+                         HEADER / HOME
+    ====================================================== -->
+
+    <header id="header">
+
         <div class="container">
+
+            <!-- ================= NAVBAR ================= -->
+
             <nav>
-                <img src="images/logo.png" class="logo">
+
+                <!-- LOGO -->
+
+                <a href="#header"
+                    class="logo-link">
+
+                    <img src="images/logo.png"
+                        class="logo"
+                        alt="Bidipta Chatterjee Logo">
+
+                </a>
+
+
+                <!-- ================= MENU ================= -->
+
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+                    <li>
+                        <a href="#header">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#about">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#services">
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#skills-section">
+                            Skills
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#portfolio">
+                            Portfolio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+
+
+                    <!-- MOBILE CLOSE BUTTON -->
+
+                    <li class="mobile-close">
+
+                        <button type="button"
+                            onclick="closemenu()"
+                            aria-label="Close menu">
+
+                            <i class="fa-solid fa-xmark"></i>
+
+                        </button>
+
+                    </li>
+
                 </ul>
-                <i class="fa-solid fa-bars" onClick="openmenu()"></i>
+
+
+                <!-- ================= THEME BUTTON ================= -->
+
+                <button id="theme-toggle"
+                    class="theme-toggle"
+                    type="button"
+                    aria-label="Toggle dark and light mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <!-- ================= MOBILE MENU BUTTON ================= -->
+
+                <button class="menu-icon"
+                    type="button"
+                    onclick="openmenu()"
+                    aria-label="Open menu">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
 
             </nav>
-            <div class="header-text">
+
+
+            <!-- =====================================================
+                              HERO SECTION
+            ====================================================== -->
+
+            <div class="hero">
+
+
+                <!-- HERO CONTENT -->
+
+                <div class="header-text reveal">
+
+                    <div class="hero-line"></div>
+
+
+                    <p class="hero-role">
+                        Full Stack Web Developer
+                    </p>
+
+
+                    <p class="hero-stack">
+
+                        MERN Stack
+
+                        <span>|</span>
+
+                        AI Integration
+
+                    </p>
+
+
+                    <h1>
+
+                        Hi, I'm
+
+                        <span>
+                            Bidipta
+                        </span>
+
+                        <br>
+
+                        Chatterjee From India
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        I’m a B.Tech CSE (AIML) student and an aspiring
+                        Full Stack Developer passionate about building
+                        responsive, user-friendly and scalable web
+                        applications.
+
+                    </p>
+
+
+                    <!-- HERO BUTTONS -->
+
+                    <div class="hero-buttons">
+
+
+                        <a href="#contact"
+                            class="hero-btn">
+
+                            Let's Connect
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                        <a href="#portfolio"
+                            class="hero-outline-btn">
+
+                            View My Work
+
+                        </a>
+
+
+                    </div>
+
+                </div>
+
+
+                <!--
+                    NO PERSONAL IMAGE HERE.
+
+                    Your single personal image is kept
+                    in the About section.
+                -->
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+                              ABOUT
+    ====================================================== -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <div class="row reveal">
+
+
+                <!-- ================= ABOUT IMAGE ================= -->
+
+                <div class="about-col-1">
+
+                    <div class="about-image-wrapper">
+
+                        <img src="images/user.jpeg"
+                            alt="Bidipta Chatterjee">
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= ABOUT CONTENT ================= -->
+
+                <div class="about-col-2">
+
+                    <h1 class="subtitle">
+                        About Me
+                    </h1>
+
+
+                    <p>
+
+                        I’m a B.Tech CSE (AIML) student and an aspiring
+                        Full Stack Developer with a passion for building
+                        responsive, user-friendly, and scalable web
+                        applications.
+
+                        I work with technologies like React.js,
+                        JavaScript, Node.js, Express.js, MongoDB,
+                        and MySQL, and enjoy integrating AI-powered
+                        features into real-world projects.
+
+                        I’m continuously improving my development
+                        and problem-solving skills while looking for
+                        opportunities to learn, contribute, and grow
+                        as a software developer.
+
+                    </p>
+
+
+                    <!-- ================= TABS ================= -->
+
+                    <div class="tab-titles">
+
+
+                        <p class="tab-links active-link"
+                            onclick="opentab(event, 'skills')">
+
+                            Skills
+
+                        </p>
+
+
+                        <p class="tab-links"
+                            onclick="opentab(event, 'Experience')">
+
+                            Experience
+
+                        </p>
+
+
+                        <p class="tab-links"
+                            onclick="opentab(event, 'Education')">
+
+                            Education
+
+                        </p>
+
+
+                    </div>
+
+
+                    <!-- ================= SKILLS TAB ================= -->
+
+                    <div class="tab-contents active-tab"
+                        id="skills">
+
+                        <ul>
+
+                            <li>
+
+                                <span>
+                                    Frontend Development
+                                </span>
+
+                                <br>
+
+                                Designing Web interfaces
+
+                            </li>
+
+
+                            <li>
+
+                                <span>
+                                    Backend Development
+                                </span>
+
+                                <br>
+
+                                Storing Data in the database
+
+                            </li>
+
+
+                            <li>
+
+                                <span>
+                                    Database Management
+                                </span>
+
+                                <br>
+
+                                Managing data via proper authentication
+                                & authorization
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- ================= EXPERIENCE TAB ================= -->
+
+                    <div class="tab-contents"
+                        id="Experience">
+
+                        <ul>
+
+                            <li>
+
+                                <span>
+                                    2025 – Present
+                                </span>
+
+                                <br>
+
+                                Full Stack Developer —
+                                Personal & Academic Projects
+
+                            </li>
+
+                        </ul>
+
+
+                        <ul>
+
+                            <li>
+
+                                Developed responsive web applications
+                                using React.js, JavaScript, Node.js,
+                                Express.js, and MongoDB.
+
+                            </li>
+
+
+                            <li>
+
+                                Built full-stack projects with REST APIs,
+                                authentication, database integration,
+                                and API integration.
+
+                            </li>
+
+
+                            <li>
+
+                                Developed an AI Exam Notes Generator
+                                using the MERN stack and Gemini API
+                                to generate study notes automatically.
+
+                            </li>
+
+
+                            <li>
+
+                                Created projects including a College
+                                Placement Portal, Hotel Booking Website,
+                                AI Image Generator, and Parking Slot
+                                Management System.
+
+                            </li>
+
+
+                            <li>
+
+                                Used Git and GitHub for version control
+                                and project management.
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- ================= EDUCATION TAB ================= -->
+
+                    <div class="tab-contents"
+                        id="Education">
+
+                        <ul>
+
+                            <li>
+
+                                <span>
+                                    2023 - Present
+                                </span>
+
+                                <br>
+
+                                B.Tech in CSE(AIML)
+                                at Brainware University
+
+                            </li>
+
+
+                            <li>
+
+                                <span>
+                                    2022 - 2023
+                                </span>
+
+                                <br>
+
+                                Higher Secondary at
+                                Simlon A.K VIdyamandir
+
+                            </li>
+
+
+                            <li>
+
+                                <span>
+                                    2020 - 2021
+                                </span>
+
+                                <br>
+
+                                Madhyamik Examination at
+                                Begpur Union Institution
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+                              SERVICES
+    ====================================================== -->
+
+    <section id="services">
+
+        <div class="container reveal">
+
+
+            <h1 class="subtitle">
+                My Services
+            </h1>
+
+
+            <div class="services-list">
+
+
+                <!-- SERVICE 1 -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-code"></i>
+
+                    </div>
+
+
+                    <h2>
+                        Full Stack Web Development
+                    </h2>
+
+
+                    <p>
+
+                        Develop complete web applications using
+                        the MERN stack (MongoDB, Express.js,
+                        React.js, Node.js).
+
+                    </p>
+
+
+                    <a href="#contact">
+
+                        Learn More
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- SERVICE 2 -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                    </div>
+
+
+                    <h2>
+                        Website Development
+                    </h2>
+
+
+                    <p>
+
+                        Create portfolio websites, business websites,
+                        dashboards, and other responsive web interfaces.
+
+                    </p>
+
+
+                    <a href="#contact">
+
+                        Learn More
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- SERVICE 3 -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">
+
+                        <i class="fa-solid fa-server"></i>
+
+                    </div>
+
+
+                    <h2>
+                        Backend Development
+                    </h2>
+
+
+                    <p>
+
+                        Build REST APIs, server-side applications,
+                        authentication, and database integration
+                        using Node.js and Express.js.
+
+                    </p>
+
+
+                    <a href="#contact">
+
+                        Learn More
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+                              SKILLS
+    ====================================================== -->
+
+    <section id="skills-section">
+
+        <div class="container">
+
+
+            <div class="skills-heading reveal">
+
+                <h1 class="subtitle">
+                    Technical Skills
+                </h1>
+
+
                 <p>
-                    Full Stack Web Developer <br>
-                    MERN Stack | AI Integration
+
+                    Technologies and tools I use to build responsive,
+                    scalable and user-friendly web applications.
+
                 </p>
 
-                <h1>Hi, I'm <span>Bidipta</span><br>Chatterjee From India</h1>
             </div>
-        </div>
-    </div>
-    <!-- -------------------about---------------- -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user.jpeg">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1>
-                    <p>I’m a B.Tech CSE (AIML) student and an aspiring Full Stack Developer with a passion for building
-                        responsive, user-friendly, and scalable web applications. I work with technologies like
-                        React.js, JavaScript, Node.js, Express.js, MongoDB, and MySQL, and enjoy integrating AI-powered
-                        features into real-world projects. I’m continuously improving my development and problem-solving
-                        skills while looking for opportunities to learn, contribute, and grow as a software developer.
-                    </p>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onClick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onClick="opentab('Experience')">Experience</p>
-                        <p class="tab-links" onClick="opentab('Education')">Education</p>
+
+
+            <div class="skills-grid">
+
+
+                <!-- HTML -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-top">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-brands fa-html5"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                HTML5
+                            </h3>
+
+                            <span>
+                                Frontend
+                            </span>
+
+                        </div>
 
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Frontend Development</span><br>Designing Web interfaces</li>
-                            <li><span>Backend Development</span><br>Storeing Data in the database</li>
-                            <li><span>Database Management</span><br>Managing data via proper authentication &
-                                authorization</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="Experience">
-                        <ul>
-                            <li>
-                                <span>2025 – Present</span><br>
-                                Full Stack Developer — Personal & Academic Projects
-                            </li>
-                        </ul>
 
-                        <ul>
-                            <li>Developed responsive web applications using React.js, JavaScript, Node.js, Express.js,
-                                and MongoDB.</li>
-                            <li>Built full-stack projects with REST APIs, authentication, database integration, and API
-                                integration.</li>
-                            <li>Developed an AI Exam Notes Generator using the MERN stack and Gemini API to generate
-                                study notes automatically.</li>
-                            <li>Created projects including a College Placement Portal, Hotel Booking Website, AI Image
-                                Generator, and Parking Slot Management System.</li>
-                            <li>Used Git and GitHub for version control and project management.</li>
-                        </ul>
+
+                    <div class="skill-info">
+
+                        <span>
+                            Proficiency
+                        </span>
+
+                        <span class="percentage">
+                            90%
+                        </span>
 
                     </div>
-                    <div class="tab-contents" id="Education">
-                        <ul>
-                            <li><span>2023 - present</span><br>B.Tech in CSE(AIML) at Brainware University</li>
-                            <li><span>2022 - 2023</span><br>Higher Secondary at Simlon A.K VIdyamandir</li>
-                            <li><span>2020 - 2021</span><br>Madhyamik Examination at Begpur Union Institution</li>
-                        </ul>
+
+
+                    <div class="skill-bar">
+
+                        <div class="skill-progress"
+                            data-progress="90">
+                        </div>
+
                     </div>
+
                 </div>
+
+
+
+                <!-- CSS -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-top">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-brands fa-css3-alt"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                CSS3
+                            </h3>
+
+                            <span>
+                                Frontend
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-info">
+
+                        <span>
+                            Proficiency
+                        </span>
+
+                        <span class="percentage">
+                            88%
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-bar">
+
+                        <div class="skill-progress"
+                            data-progress="88">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- JAVASCRIPT -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-top">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-brands fa-js"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                JavaScript
+                            </h3>
+
+                            <span>
+                                Programming
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-info">
+
+                        <span>
+                            Proficiency
+                        </span>
+
+                        <span class="percentage">
+                            85%
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-bar">
+
+                        <div class="skill-progress"
+                            data-progress="85">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- REACT -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-top">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-brands fa-react"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                React.js
+                            </h3>
+
+                            <span>
+                                Frontend
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-info">
+
+                        <span>
+                            Proficiency
+                        </span>
+
+                        <span class="percentage">
+                            82%
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-bar">
+
+                        <div class="skill-progress"
+                            data-progress="82">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- NODE -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-top">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-brands fa-node-js"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                Node.js
+                            </h3>
+
+                            <span>
+                                Backend
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-info">
+
+                        <span>
+                            Proficiency
+                        </span>
+
+                        <span class="percentage">
+                            80%
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-bar">
+
+                        <div class="skill-progress"
+                            data-progress="80">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- EXPRESS -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-top">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-server"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                Express.js
+                            </h3>
+
+                            <span>
+                                Backend
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-info">
+
+                        <span>
+                            Proficiency
+                        </span>
+
+                        <span class="percentage">
+                            78%
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-bar">
+
+                        <div class="skill-progress"
+                            data-progress="78">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- MONGODB -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-top">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-database"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                MongoDB
+                            </h3>
+
+                            <span>
+                                Database
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-info">
+
+                        <span>
+                            Proficiency
+                        </span>
+
+                        <span class="percentage">
+                            80%
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-bar">
+
+                        <div class="skill-progress"
+                            data-progress="80">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- MYSQL -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-top">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-database"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                MySQL
+                            </h3>
+
+                            <span>
+                                Database
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-info">
+
+                        <span>
+                            Proficiency
+                        </span>
+
+                        <span class="percentage">
+                            75%
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-bar">
+
+                        <div class="skill-progress"
+                            data-progress="75">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- REST APIs -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-top">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-plug"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                REST APIs
+                            </h3>
+
+                            <span>
+                                Backend
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-info">
+
+                        <span>
+                            Proficiency
+                        </span>
+
+                        <span class="percentage">
+                            80%
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-bar">
+
+                        <div class="skill-progress"
+                            data-progress="80">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- GIT -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-top">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-brands fa-git-alt"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                Git
+                            </h3>
+
+                            <span>
+                                Tools
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-info">
+
+                        <span>
+                            Proficiency
+                        </span>
+
+                        <span class="percentage">
+                            78%
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-bar">
+
+                        <div class="skill-progress"
+                            data-progress="78">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- GITHUB -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-top">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-brands fa-github"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                GitHub
+                            </h3>
+
+                            <span>
+                                Tools
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-info">
+
+                        <span>
+                            Proficiency
+                        </span>
+
+                        <span class="percentage">
+                            82%
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-bar">
+
+                        <div class="skill-progress"
+                            data-progress="82">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PYTHON -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-top">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-brands fa-python"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                Python
+                            </h3>
+
+                            <span>
+                                Programming
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-info">
+
+                        <span>
+                            Proficiency
+                        </span>
+
+                        <span class="percentage">
+                            50%
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-bar">
+
+                        <div class="skill-progress"
+                            data-progress="75">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- AI INTEGRATION -->
+
+                <div class="skill-card reveal">
+
+                    <div class="skill-top">
+
+                        <div class="skill-icon">
+
+                            <i class="fa-solid fa-brain"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <h3>
+                                AI Integration
+                            </h3>
+
+                            <span>
+                                AI
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-info">
+
+                        <span>
+                            Proficiency
+                        </span>
+
+                        <span class="percentage">
+                            72%
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-bar">
+
+                        <div class="skill-progress"
+                            data-progress="72">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
             </div>
+
         </div>
-    </div>
-    <!-- -------------------------------Services------------------ -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Full Stack Web Development</h2>
-                    <p>Develop complete web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).
-                    </p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop"></i>
-                    <h2>Website Development</h2>
-                    <p>Create portfolio websites, business websites, dashboards, and other responsive web interfaces.
-                    </p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-copy"></i>
-                    <h2>Backend Development</h2>
-                    <p>Build REST APIs, server-side applications, authentication, and database integration using Node.js
-                        and Express.js.</p>
-                    <a href="#">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ----------------------------Portfolio------------------ -->
-    <div id="portfolio">
-        <div class="container">
+
+    </section>
+
+
+
+    <!-- =====================================================
+                              PORTFOLIO
+    ====================================================== -->
+
+    <section id="portfolio">
+
+        <div class="container reveal">
+
+
             <h1 class="subtitle">
                 My Work
             </h1>
+
+
             <div class="work-list">
+
+
+                <!-- ================= PROJECT 1 ================= -->
+
                 <div class="work">
-                    <img src="images/work1.png">
-                    <div class="layer">
-                        <p>A MERN-based AI text-to-image generator that converts user prompts into high-quality images
-                            using the Clipdrop API.</p>
-                        <a href="https://imagify-frontend-k25q.onrender.com/"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work2.png">
+
+                    <img src="images/work1.png"
+                        alt="AI Image Generator">
+
+
                     <div class="layer">
 
-                        <p>An AI-powered application that generates concise, structured, and exam-focused notes from
-                            study content using the Gemini API.</p>
-                        <a href="https://ai-mern-projectfrontend.onrender.com" target="_blank">
+                        <div>
+
+                            <h3>
+                                AI Image Generator
+                            </h3>
+
+
+                            <p>
+
+                                A MERN-based AI text-to-image generator
+                                that converts user prompts into high-quality
+                                images using the Clipdrop API.
+
+                            </p>
+
+                        </div>
+
+
+                        <a href="https://imagify-frontend-k25q.onrender.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Open AI Image Generator">
+
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
                         </a>
+
                     </div>
+
                 </div>
+
+
+
+                <!-- ================= PROJECT 2 ================= -->
+
                 <div class="work">
-                    <img src="images/work3.png">
+
+                    <img src="images/work2.png"
+                        alt="AI Exam Notes Generator">
+
+
                     <div class="layer">
 
-                        <p>A group project featuring an ML-based solution for intelligent parking management, slot
-                            availability prediction, and efficient vehicle parking.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <div>
+
+                            <h3>
+                                AI Exam Notes Generator
+                            </h3>
+
+
+                            <p>
+
+                                An AI-powered application that generates
+                                concise, structured, and exam-focused notes
+                                from study content using the Gemini API.
+
+                            </p>
+
+                        </div>
+
+
+                        <a href="https://ai-mern-projectfrontend.onrender.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Open AI Exam Notes Generator">
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
                     </div>
+
+                </div>
+
+
+
+                <!-- ================= PROJECT 3 ================= -->
+
+                <div class="work">
+
+                    <img src="images/work3.png"
+                        alt="Parking Slot Management">
+
+
+                    <div class="layer">
+
+                        <div>
+
+                            <h3>
+                                Parking Slot Management
+                            </h3>
+
+
+                            <p>
+
+                                A group project featuring an ML-based
+                                solution for intelligent parking management,
+                                slot availability prediction, and efficient
+                                vehicle parking.
+
+                            </p>
+
+                        </div>
+
+
+                        <!--
+                            Replace # with your real Parking
+                            project URL when you have it.
+                        -->
+
+                        <a href="#"
+                            aria-label="Parking project">
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ================= GITHUB ================= -->
+
+            <a href="https://github.com/Bidiptachatterjee?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn portfolio-btn">
+
+                See More Projects
+
+                <i class="fa-brands fa-github"></i>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+                              CONTACT
+    ====================================================== -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="row reveal">
+
+
+                <!-- ================= CONTACT LEFT ================= -->
+
+                <div class="contact-left">
+
+
+                    <h1 class="subtitle">
+                        Contact Me
+                    </h1>
+
+
+                    <!-- EMAIL -->
+
+                    <p>
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+
+                        <a href="mailto:chatterjeebidipta122@gmail.com?subject=Portfolio%20Contact">
+
+                            chatterjeebidipta122@gmail.com
+
+                        </a>
+
+                    </p>
+
+
+                    <!-- PHONE -->
+
+                    <p>
+
+                        <i class="fa-solid fa-phone"></i>
+
+
+                        <a href="tel:+918670428551">
+
+                            +91 8670428551
+
+                        </a>
+
+                    </p>
+
+
+                    <!-- ================= SOCIAL LINKS ================= -->
+
+                    <div class="social-icons">
+
+
+                        <!-- FACEBOOK -->
+
+                        <a href="https://www.facebook.com/share/1Jgw5q5kfs/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook">
+
+                            <i class="fa-brands fa-square-facebook"></i>
+
+                        </a>
+
+
+                        <!-- LINKEDIN -->
+
+                        <a href="https://www.linkedin.com/in/bidipta-chatterjee-59297a377/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn">
+
+                            <i class="fa-brands fa-linkedin"></i>
+
+                        </a>
+
+
+                        <!-- GITHUB -->
+
+                        <a href="https://github.com/Bidiptachatterjee"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub">
+
+                            <i class="fa-brands fa-square-github"></i>
+
+                        </a>
+
+
+                    </div>
+
+
+                    <!-- ================= CV ================= -->
+
+                    <a href="images/Bidipta Chatterjee(new Resume.).pdf"
+                        download
+                        class="btn btn2 cv-btn">
+
+                        Download CV
+
+                        <i class="fa-solid fa-download"></i>
+
+                    </a>
+
+
+                </div>
+
+
+
+                <!-- ================= CONTACT RIGHT ================= -->
+
+                <div class="contact-right">
+
+
+                    <div class="contact-form-header">
+
+
+                        <i class="fa-regular fa-envelope"></i>
+
+
+                        <div>
+
+                            <h2>
+                                Send Me a Message
+                            </h2>
+
+
+                            <p>
+                                I'd love to hear from you.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ================= FORM ================= -->
+
+                    <form name="submit-to-google-sheet"
+                        id="contact-form">
+
+
+                        <!-- NAME -->
+
+                        <div class="input-group">
+
+                            <label for="name">
+                                Name
+                            </label>
+
+
+                            <div class="input-box">
+
+                                <i class="fa-regular fa-user"></i>
+
+
+                                <input type="text"
+                                    id="name"
+                                    name="Name"
+                                    placeholder="Your Name"
+                                    autocomplete="name"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- EMAIL -->
+
+                        <div class="input-group">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+
+                            <div class="input-box">
+
+                                <i class="fa-regular fa-envelope"></i>
+
+
+                                <input type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Your Email"
+                                    autocomplete="email"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- MESSAGE -->
+
+                        <div class="input-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+
+                            <div class="textarea-box">
+
+                                <i class="fa-regular fa-message"></i>
+
+
+                                <textarea id="message"
+                                    name="message"
+                                    rows="6"
+                                    placeholder="Your Message"
+                                    maxlength="500"
+                                    required></textarea>
+
+                            </div>
+
+
+                            <div class="character-count">
+
+                                <span id="character-count">
+                                    0
+                                </span>
+
+                                /500
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- ================= SEND BUTTON ================= -->
+
+                        <button type="submit"
+                            class="send-btn"
+                            id="send-btn">
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
+
+                            <span id="send-text">
+                                Send Message
+                            </span>
+
+                        </button>
+
+
+
+                        <!-- ================= MESSAGE STATUS ================= -->
+
+                        <div id="msg"
+                            class="form-message"
+                            role="status"
+                            aria-live="polite">
+
+                        </div>
+
+
+                    </form>
+
                 </div>
 
             </div>
-            <a href="https://github.com/Bidiptachatterjee?tab=repositories" class="btn">See more</a>
+
         </div>
-    </div>
-    
-    <!-- -----------------------------Contact----------------------- -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="subtitle">Contact Me</h1>
-                    <p>
-                        <i class="fa-solid fa-paper-plane"></i>
-                        <a href="mailto:chatterjeebidipta122@gmail.com?subject=Portfolio%20Contact">
-                            chatterjeebidipta122@gmail.com
-                        </a>
-                    </p>
-                    <p>
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="tel:+918670428551">+91 8670428551</a>
-                    </p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/share/1Jgw5q5kfs/"><i
-                                class="fa-brands fa-square-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/bidipta-chatterjee-59297a377/"><i
-                                class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Bidiptachatterjee"><i class="fa-brands fa-square-github"></i></a>
-                    </div>
-                    <a href="images/Bidipta Chatterjee(new Resume.).pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
+
+
+
+        <!-- =====================================================
+                              COPYRIGHT
+        ====================================================== -->
 
         <div class="copyright">
-            <p>© 2026 Bidipta Chatterjee. Made with <i class="fa-solid fa-heart"></i> All Rights Reserved.</p>
+
+            <p>
+
+                © 2026 Bidipta Chatterjee.
+
+                Made with
+
+                <i class="fa-solid fa-heart"></i>
+
+                All Rights Reserved.
+
+            </p>
+
         </div>
-    </div>
+
+    </section>
 
 
+
+    <!-- =====================================================
+                         JAVASCRIPT
+    ====================================================== -->
+
     <script>
-        var tabLinks = document.getElementsByClassName("tab-links")
-        var tabContents = document.getElementsByClassName("tab-contents")
-        function opentab(tabname) {
-            for (tabLink of tabLinks) {
-                tabLink.classList.remove("active-link")
-            }
-            for (tabContent of tabContents) {
-                tabContent.classList.remove("active-tab")
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
+
+
+        /* =====================================================
+                         MOBILE MENU
+        ====================================================== */
+
+
+        const sidemenu =
+            document.getElementById("sidemenu");
+
+
         function openmenu() {
-            sidemenu.style.right = "0px";
+
+            sidemenu.classList.add("open");
+
+            document.body.classList.add("menu-open");
+
         }
+
+
         function closemenu() {
-            sidemenu.style.right = "-200px";
+
+            sidemenu.classList.remove("open");
+
+            document.body.classList.remove("menu-open");
+
         }
-    </script>
-    
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby7wGlOnl2q30L20JddrkMRuhg0dICiWTrgPJnYeD261IQ--YH7I00VvLlzxQWi9hrN/exec';
 
-    const form = document.forms['submit-to-google-sheet'];
-    const msg = document.getElementById("msg");
-    const submitBtn = form.querySelector("button[type='submit']");
 
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
 
-        
-        submitBtn.innerHTML = "Sending...";
-        submitBtn.style.background = "#666";
-        submitBtn.disabled = true;
+        /* Close menu after clicking navigation link */
 
-        fetch(scriptURL, {
-            method: "POST",
-            body: new FormData(form),
-            mode: "no-cors"
-        })
-        .then(function() {
+        const menuLinks =
+            document.querySelectorAll("#sidemenu a");
 
-            
-            msg.innerHTML = "Message sent successfully!";
-            msg.style.color = "#61b752";
 
-            
-            form.reset();
+        menuLinks.forEach(function (link) {
 
-            
-            submitBtn.innerHTML = "Submit";
-            submitBtn.style.background = "#ff004f";
-            submitBtn.disabled = false;
+            link.addEventListener("click", function () {
 
-            
-            setTimeout(function() {
-                msg.innerHTML = "";
-            }, 5000);
+                closemenu();
 
-        })
-        .catch(function(error) {
+            });
 
-            console.error("Error:", error);
-
-           
-            msg.innerHTML = "Something went wrong. Please try again.";
-            msg.style.color = "#ff004f";
-
-            
-            submitBtn.innerHTML = "Submit";
-            submitBtn.style.background = "#ff004f";
-            submitBtn.disabled = false;
         });
-    });
-</script>
+
+
+
+        /* =====================================================
+                         ABOUT TABS
+        ====================================================== */
+
+
+        const tabLinks =
+            document.getElementsByClassName("tab-links");
+
+
+        const tabContents =
+            document.getElementsByClassName("tab-contents");
+
+
+        function opentab(event, tabname) {
+
+
+            for (let tabLink of tabLinks) {
+
+                tabLink.classList.remove("active-link");
+
+            }
+
+
+            for (let tabContent of tabContents) {
+
+                tabContent.classList.remove("active-tab");
+
+            }
+
+
+            event.currentTarget.classList.add("active-link");
+
+
+            const selectedTab =
+                document.getElementById(tabname);
+
+
+            if (selectedTab) {
+
+                selectedTab.classList.add("active-tab");
+
+            }
+
+        }
+
+
+
+        /* =====================================================
+                         DARK / LIGHT MODE
+        ====================================================== */
+
+
+        const themeToggle =
+            document.getElementById("theme-toggle");
+
+
+        const themeIcon =
+            themeToggle.querySelector("i");
+
+
+        const savedTheme =
+            localStorage.getItem("portfolio-theme");
+
+
+        if (savedTheme === "light") {
+
+            document.body.classList.add("light-mode");
+
+
+            themeIcon.classList.remove("fa-moon");
+
+            themeIcon.classList.add("fa-sun");
+
+        }
+
+
+
+        themeToggle.addEventListener("click", function () {
+
+
+            document.body.classList.toggle("light-mode");
+
+
+            const isLight =
+                document.body.classList.contains("light-mode");
+
+
+            if (isLight) {
+
+
+                themeIcon.classList.remove("fa-moon");
+
+                themeIcon.classList.add("fa-sun");
+
+
+                localStorage.setItem(
+                    "portfolio-theme",
+                    "light"
+                );
+
+
+            } else {
+
+
+                themeIcon.classList.remove("fa-sun");
+
+                themeIcon.classList.add("fa-moon");
+
+
+                localStorage.setItem(
+                    "portfolio-theme",
+                    "dark"
+                );
+
+            }
+
+        });
+
+
+
+        /* =====================================================
+                         SCROLL REVEAL
+        ====================================================== */
+
+
+        const revealElements =
+            document.querySelectorAll(".reveal");
+
+
+        if ("IntersectionObserver" in window) {
+
+
+            const revealObserver =
+                new IntersectionObserver(
+                    function (entries) {
+
+
+                        entries.forEach(function (entry) {
+
+
+                            if (entry.isIntersecting) {
+
+
+                                entry.target.classList.add("active");
+
+
+                                revealObserver.unobserve(
+                                    entry.target
+                                );
+
+                            }
+
+                        });
+
+
+                    },
+                    {
+                        threshold: 0.12
+                    }
+                );
+
+
+            revealElements.forEach(function (element) {
+
+                revealObserver.observe(element);
+
+            });
+
+
+        } else {
+
+
+            revealElements.forEach(function (element) {
+
+                element.classList.add("active");
+
+            });
+
+        }
+
+
+
+        /* =====================================================
+                         SKILL PROGRESS
+        ====================================================== */
+
+
+        const skillSection =
+            document.getElementById("skills-section");
+
+
+        const skillProgress =
+            document.querySelectorAll(".skill-progress");
+
+
+        if (skillSection &&
+            "IntersectionObserver" in window) {
+
+
+            const skillObserver =
+                new IntersectionObserver(
+                    function (entries) {
+
+
+                        entries.forEach(function (entry) {
+
+
+                            if (entry.isIntersecting) {
+
+
+                                skillProgress.forEach(
+                                    function (bar) {
+
+
+                                        const progress =
+                                            bar.getAttribute(
+                                                "data-progress"
+                                            );
+
+
+                                        bar.style.width =
+                                            progress + "%";
+
+
+                                    }
+                                );
+
+
+                                skillObserver.unobserve(
+                                    skillSection
+                                );
+
+                            }
+
+                        });
+
+
+                    },
+                    {
+                        threshold: 0.2
+                    }
+                );
+
+
+            skillObserver.observe(skillSection);
+
+        } else {
+
+
+            skillProgress.forEach(function (bar) {
+
+                const progress =
+                    bar.getAttribute("data-progress");
+
+                bar.style.width =
+                    progress + "%";
+
+            });
+
+        }
+
+
+
+        /* =====================================================
+                         MESSAGE CHARACTER COUNT
+        ====================================================== */
+
+
+        const messageInput =
+            document.getElementById("message");
+
+
+        const characterCount =
+            document.getElementById("character-count");
+
+
+        if (messageInput && characterCount) {
+
+
+            messageInput.addEventListener(
+                "input",
+                function () {
+
+
+                    characterCount.textContent =
+                        this.value.length;
+
+
+                }
+            );
+
+        }
+
+
+
+        /* =====================================================
+                         CONTACT FORM
+        ====================================================== */
+
+
+        const scriptURL =
+            "https://script.google.com/macros/s/AKfycbxF9QYudUYUdprp4G0X3Erq2JYOYfpue_N-9BaFabCDlR_lXC1Hx4wxfRQc9bMCNber/exec";
+
+
+        const form =
+            document.forms["submit-to-google-sheet"];
+
+
+        const msg =
+            document.getElementById("msg");
+
+
+        const sendBtn =
+            document.getElementById("send-btn");
+
+
+        const sendText =
+            document.getElementById("send-text");
+
+
+        const sendIcon =
+            sendBtn.querySelector("i");
+
+
+
+        form.addEventListener(
+            "submit",
+            function (event) {
+
+
+                event.preventDefault();
+
+
+                /* ===============================
+                   Prevent multiple submissions
+                =============================== */
+
+                sendBtn.disabled = true;
+
+
+
+                /* ===============================
+                   Sending state
+                =============================== */
+
+                sendBtn.classList.add("sending");
+
+
+                sendText.textContent =
+                    "Sending...";
+
+
+                sendIcon.className =
+                    "fa-solid fa-spinner fa-spin";
+
+
+                msg.className =
+                    "form-message";
+
+
+                msg.textContent =
+                    "";
+
+
+
+                /* ===============================
+                   Send form data
+                =============================== */
+
+                fetch(scriptURL, {
+
+                    method: "POST",
+
+                    body: new FormData(form),
+
+                    mode: "no-cors"
+
+                })
+
+
+                .then(function () {
+
+
+                    /* ===============================
+                       SUCCESS
+                    =============================== */
+
+
+                    msg.className =
+                        "form-message success";
+
+
+                    msg.innerHTML =
+                        '<i class="fa-solid fa-circle-check"></i> ' +
+                        "Message sent successfully!";
+
+
+                    form.reset();
+
+
+                    characterCount.textContent =
+                        "0";
+
+
+                    /* Restore button */
+
+                    sendBtn.classList.remove(
+                        "sending"
+                    );
+
+
+                    sendText.textContent =
+                        "Send Message";
+
+
+                    sendIcon.className =
+                        "fa-solid fa-paper-plane";
+
+
+                    sendBtn.disabled =
+                        false;
+
+
+
+                    /* Hide success message */
+
+                    setTimeout(function () {
+
+
+                        msg.className =
+                            "form-message";
+
+
+                        msg.textContent =
+                            "";
+
+
+                    }, 5000);
+
+
+                })
+
+
+                .catch(function (error) {
+
+
+                    console.error(error);
+
+
+                    /* ===============================
+                       ERROR
+                    =============================== */
+
+
+                    msg.className =
+                        "form-message error";
+
+
+                    msg.innerHTML =
+                        '<i class="fa-solid fa-circle-exclamation"></i> ' +
+                        "Message is not sending. Please try again.";
+
+
+                    /* Restore button */
+
+                    sendBtn.classList.remove(
+                        "sending"
+                    );
+
+
+                    sendText.textContent =
+                        "Send Message";
+
+
+                    sendIcon.className =
+                        "fa-solid fa-paper-plane";
+
+
+                    sendBtn.disabled =
+                        false;
+
+
+                });
+
+
+            }
+        );
+
+
+
+        /* =====================================================
+                     ACTIVE NAVIGATION ON SCROLL
+        ====================================================== */
+
+
+        const sections =
+            document.querySelectorAll(
+                "header, section"
+            );
+
+
+        const navItems =
+            document.querySelectorAll(
+                "#sidemenu li a"
+            );
+
+
+        window.addEventListener(
+            "scroll",
+            function () {
+
+
+                let current = "";
+
+
+                sections.forEach(function (section) {
+
+
+                    const sectionTop =
+                        section.offsetTop - 150;
+
+
+                    const sectionHeight =
+                        section.offsetHeight;
+
+
+                    if (
+                        window.scrollY >= sectionTop &&
+                        window.scrollY <
+                        sectionTop + sectionHeight
+                    ) {
+
+
+                        current =
+                            section.getAttribute("id");
+
+
+                    }
+
+                });
+
+
+                navItems.forEach(function (link) {
+
+
+                    link.classList.remove(
+                        "active"
+                    );
+
+
+                    if (
+                        link.getAttribute("href") ===
+                        "#" + current
+                    ) {
+
+
+                        link.classList.add(
+                            "active"
+                        );
+
+
+                    }
+
+                });
+
+
+            }
+        );
+
+
+    </script>
 
 
 </body>
